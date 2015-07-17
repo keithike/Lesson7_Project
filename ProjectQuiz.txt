@@ -1,9 +1,9 @@
-*****************************************************
-Project Name:  Recipe Display Application
+************************************************************************
+Project Name:  Recipe Display Application  --  Project Quiz
 Author: 
 Date:   
 Participation Assignment (25 points)
-*****************************************************
+************************************************************************
 
 Instructions:  
 Answer the following questions for Lesson 7 Assignment
@@ -13,8 +13,7 @@ Question #1:  (5 points)
 ++++++++++++
 Why should you ensure that the script element that links to the jQuery library file comes before any other script element for a .js file that includes jQuery code?
 
-
-
+So that it can run first, so that any .js files that use any JQuery code can be referenced and used
 
 ++++++++++++
 Question #2:  (5 points)
@@ -22,7 +21,8 @@ Question #2:  (5 points)
 Why should you avoid including jQuery in a project if you don't need it?
 
 
-
+To avoid extending the native element prototypes. A jQuery object has completely different methods available to it than a reference to a DOM element, an array with
+elements or any type of NodeList, therefore you always end up with code that mixes jQuery objects, native elements and NodeLists
 
 
 
@@ -32,10 +32,16 @@ Question #3:  (5 points)
 How does every jQuery statement start?
 
 
-
+they all start with a '$'
 
 
 ++++++++++++
 Question #4: (10 points)
 ++++++++++++
 What is a Content Delivery Network (CDN)?  List and explain at least FOUR advantages in using a CDN.
+A CDN  is a large distributed system of servers deployed in multiple data centers across the Internet
+it is also an alterniative to hosting JQuery yourself. 
+1) you dont have to host it yourself, making faster load times
+2) People have already visted websites where they automatically download JQuery, so it will load faster since you arent hosting it
+3) You wont have the same capacity or scalability offered by major CDNs which means less packet loss faster load times
+4) CDNs provide localized data centers which are closer to users, meaning faster load times
